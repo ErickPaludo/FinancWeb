@@ -1,4 +1,4 @@
-.contas-ctn-pai{
+.cadcontas-ctn-pai{
   background-color: rgb(0, 0, 0);
   height: 100%;
   width: 100%;
@@ -7,21 +7,21 @@
   flex-direction: column;
   gap: 2px;
 }
-.contas-painel-sub{
+.cadcontas-painel-sub{
   height: 6%;
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.contas-icone{
+.cadcontas-icone{
   margin-top: 10px;
   margin-left: 10px;
   background-color: rgb(255, 255, 255);
   width: 30px;
   height: 30px;
 }
-.contas-painel-inf{
+.cadcontas-painel-inf{
   background-color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
@@ -32,14 +32,14 @@
   align-items: center;
   overflow-x: auto;
 }
-.contas-painel-input{
-  width: 80%;
+.cadcontas-painel-input{
+  width: 90%;
   height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.contas-painel{
+.cadcontas-painel{
    display: flex;
    justify-content: flex-start;
    align-items: center;
@@ -47,13 +47,13 @@
    gap: 10px;
    margin-top: 15px;
 }
-.contas-cartao-label{
+.cadcontas-cartao-label{
     margin: 0;
     color: white;
     font-style: unset;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.contas-cartao{
+.cadcontas-cartao{
   width: 90%;
   height: 150px;
   padding: 10px;
@@ -63,20 +63,20 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.contas-botao-adicionar{
+.cadcontas-botao-adicionar{
   background-color: black;
   color: white;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 135px;
+  height: 40px;
   border-radius: 5px;
   box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
-  font-size: 30px;
+  font-size: 20px;
 }
-.contas-label{
+.cadcontas-label{
   color: #564E4E;
 }
-.contas-input-discreto{
+.cadcontas-input-discreto{
     height: 40px;
     width: 100%;
     display: flex;
@@ -86,21 +86,64 @@
     border: none;
     color: #564E4E;
 }
-.contas-input-discreto:focus{
+.cadcontas-input-discreto:focus{
     outline: none;
     border-bottom:solid 1px black;
 }
-.contas-cartao-interno-sup{
+.cadcontas-cartao-interno-sup{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
-.contas-painel-botao-adicionar{
+.cadcontas-painel-botao-adicionar{
     width: 100%;
     margin-top: 10px;
     margin-right: 10px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+}
+.cadcontas-painel{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+}
+.cadcontas-input{
+  width: 90%;
+  height: 50px;
+  padding: 10px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.589);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cadcontas-label{
+  color: #564E4E;
+  margin: 0px;
+}
+.cadcontas-painel-dias {
+    width: 80%;
+    display: flex;
+    gap: 10px;
+}
+
+.cadcontas-painel-dias .cadcontas-input {
+    flex: 1;
+    width: 100%;
+}
+.cadcontas-label-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+.cadcontas-monetario-label{
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }

@@ -1,22 +1,26 @@
 import './Contas.css'
 import CartaoConta from "./Componentes/CartaoComp";
+import { useNavigate } from "react-router-dom";
 
 export default function Contas() {
-  return <div className='cadcontas-ctn-pai'>
-     <div className='cadcontas-painel-sub'>
-        <div className='cadcontas-ico-home'>
-          <div className='cadcontas-icone'></div>
+  const navigate = useNavigate();
+
+
+  return <div className='contas-ctn-pai'>
+     <div className='contas-painel-sub'>
+        <div className='contas-ico-home'>
+          <div className='contas-icone'></div>
         </div>
      </div>
-       <div className='cadcontas-painel-inf'>
-          <div className='cadcontas-painel-input'>
-           <div className='cadcontas-painel'>
+       <div className='contas-painel-inf'>
+          <div className='contas-painel-input'>
+           <div className='contas-painel'>
             <CartaoConta titulo="Contas 1" tipo="Corrente" vencimentos="Ven: 11 / Pag: 18" ativo />
             <CartaoConta titulo="Contas 2" tipo="Corrente" vencimentos="Ven: 11 / Pag: 18" ativo color='#df3131ff'/>
             <CartaoConta titulo="Contas 3" tipo="Corrente" vencimentos="Ven: 11 / Pag: 18" ativo={false}/>
           </div>
-           <div className='cadcontas-painel-botao-adicionar'>
-          <button className='cadcontas-botao-adicionar'>+</button>
+           <div className='contas-painel-botao-adicionar'>
+          <button className='contas-botao-adicionar' onClick={() => navigate('/CadastroContas')}>+</button>
          </div>
          </div>
         
