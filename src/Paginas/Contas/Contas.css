@@ -1,0 +1,106 @@
+.cadcontas-ctn-pai{
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+}
+.cadcontas-painel-sub{
+  height: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cadcontas-icone{
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+}
+.cadcontas-painel-inf{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  border-radius: 50px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+}
+.cadcontas-painel-input{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cadcontas-painel{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 15px;
+}
+.cadcontas-cartao-label{
+    margin: 0;
+    color: white;
+    font-style: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cadcontas-cartao{
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cadcontas-botao-adicionar{
+  background-color: black;
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
+  font-size: 30px;
+}
+.cadcontas-label{
+  color: #564E4E;
+}
+.cadcontas-input-discreto{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 20px;
+    border: none;
+    color: #564E4E;
+}
+.cadcontas-input-discreto:focus{
+    outline: none;
+    border-bottom:solid 1px black;
+}
+.cadcontas-cartao-interno-sup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cadcontas-painel-botao-adicionar{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
