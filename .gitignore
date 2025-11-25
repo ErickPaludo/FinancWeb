@@ -1,0 +1,53 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Vite
+dist/
+dist-ssr/
+.vite/
+vite.config.ts.timestamp-*
+
+# Environment files
+*.local
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Build output
+build/
+coverage/
+
+# IDEs & Editors
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: lock files (descomente se quiser ignorar)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
