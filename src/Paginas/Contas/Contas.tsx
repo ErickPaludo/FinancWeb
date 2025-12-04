@@ -15,7 +15,7 @@ export default function Contas() {
        <div className='contas-painel-inf'>
           <div className='contas-painel-input'>
            <div className='contas-painel'>
-            <CartaoConta titulo="Contas 1" tipo="Corrente" vencimentos="Ven: 11 / Pag: 18" ativo />
+            <CartaoConta titulo="Contas 1" tipo="Corrente" vencimentos="Ven: 11 / Pag: 18" ativo onClick={() => navigate('/MinhaConta')}/>
             <CartaoConta titulo="Contas 2" tipo="Corrente" vencimentos="Ven: 11 / Pag: 18" ativo color='#df3131ff'/>
             <CartaoConta titulo="Contas 3" tipo="Corrente" vencimentos="Ven: 11 / Pag: 18" ativo={false}/>
           </div>

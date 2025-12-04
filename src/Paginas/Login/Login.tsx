@@ -29,7 +29,7 @@ export default function Home() {
               <p className='login-label'>Exibir senha</p>
             </div>
 
-            <button className='login-botao-entrar' onClick={() => navigate("/MinhasContas")}>Entrar</button>
+            <button className='login-botao-entrar' onClick={() => navigate("/Contas")}>Entrar</button>
             <p className='login-label'>Ainda não possui uma conta?</p>
 
           </div>

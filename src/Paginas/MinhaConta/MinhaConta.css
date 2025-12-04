@@ -1,0 +1,96 @@
+/* Contêiner principal */
+.contas-ctn-pai{
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Cabeçalho pequeno / área superior */
+.contas-painel-sub{
+  height: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Ícone/ícone wrapper do cabeçalho */
+.contas-ico-home{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.contas-icone{
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+/* Área inferior que contém o conteúdo branco */
+.contas-painel-inf{
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  border-radius: 50px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+}
+
+/* Wrapper interno do formulário/lista */
+.contas-painel-input{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Painel que contém vários cartões/transações */
+.contas-painel{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Cartão de transação */
+.contas-cartao{
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer; /* facilita saber que é clicável */
+}
+
+/* Parte superior interna do cartão */
+.contas-cartao-interno-sup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Labels dentro do cartão */
+.contas-cartao-label{
+  margin: 0;
+  color: white;
+  font-style: unset;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

@@ -5,11 +5,12 @@ interface CartaoContaProps {
   vencimentos: string;
   ativo: boolean;
   color?: string;
+  onClick?: () => void;
 }
 
-export default function CartaoComp({ titulo, tipo, vencimentos,ativo,color}: CartaoContaProps) {
+export default function CartaoComp({ titulo, tipo, vencimentos,ativo,color,onClick}: CartaoContaProps) {
   if (!ativo) return (
-    <div className='contas-cartao' style={{ backgroundColor: "#858387" }}>
+    <div className='contas-cartao' style={{ backgroundColor: "#858387" }} >
       <div className='contas-cartao-interno-sup riscado'>
         <p className='contas-cartao-label riscado'>{titulo}</p>
         <p className='contas-cartao-label bold riscado'>{tipo}</p>
@@ -20,7 +21,7 @@ export default function CartaoComp({ titulo, tipo, vencimentos,ativo,color}: Car
   );
 
   return (
-    <div className='contas-cartao'   style={color ? { backgroundColor: color } : { backgroundColor: "#820AD1" }}>
+    <div className='contas-cartao'   style={color ? { backgroundColor: color } : { backgroundColor: "#820AD1" }} onClick={onClick}>
       <div className='contas-cartao-interno-sup'>
         <p className='contas-cartao-label'>{titulo}</p>
         <p className='contas-cartao-label bold'>{tipo}</p>
