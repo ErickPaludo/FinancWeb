@@ -1,10 +1,7 @@
 import './MinhaConta.css'
-import { useNavigate } from "react-router-dom";
 import TransacaoComp from "./Componentes/Transacoes";
 
 export default function Contas() {
-  const navigate = useNavigate();
-
   return (
     <div className="contas-ctn-pai">
       <div className="contas-painel-sub">

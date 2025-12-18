@@ -3,14 +3,14 @@ interface CartaoContaProps {
   titulo: string;
   tipo: string;
   vencimentos: string;
-  ativo: boolean;
+  ativo: number;
   color?: string;
   onClick?: () => void;
 }
 
 export default function CartaoComp({ titulo, tipo, vencimentos,ativo,color,onClick}: CartaoContaProps) {
-  if (!ativo) return (
-    <div className='contas-cartao' style={{ backgroundColor: "#858387" }} >
+  if (ativo === 1) return (
+    <div className='contas-cartao' style={{ backgroundColor: "#858387" }} onClick={onClick}>
       <div className='contas-cartao-interno-sup riscado'>
         <p className='contas-cartao-label riscado'>{titulo}</p>
         <p className='contas-cartao-label bold riscado'>{tipo}</p>
